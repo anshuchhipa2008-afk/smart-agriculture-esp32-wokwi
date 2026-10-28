@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "Anup",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 100, "left": 100, "attrs": {} },
+    { "type": "wokwi-lcd1602", "id": "lcd", "top": -40, "left": 280, "attrs": { "pins": "i2c" } },
+    { "type": "wokwi-dht22", "id": "dht", "top": -30, "left": -20, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot", "top": 113.9, "left": -29, "attrs": {} }
+  ],
+  "connections": [
+    [ "lcd:VCC", "esp:3V3", "red", [ "h-24.8", "v257.7" ] ],
+    [ "lcd:GND", "esp:GND.1", "black", [ "h-53.6", "v257.6" ] ],
+    [ "lcd:SDA", "esp:D21", "green", [ "h-63.2", "v152.2" ] ],
+    [ "lcd:SCL", "esp:D22", "green", [ "h-44", "v104.3" ] ],
+    [ "dht:VCC", "esp:3V3", "red", [ "v1.5", "h254.6", "v153.6" ] ],
+    [ "dht:GND", "esp:GND.2", "black", [ "v11.1", "h43.4", "v153.6" ] ],
+    [ "dht:SDA", "esp:D4", "green", [ "v20.7", "h81.9", "v-9.6", "h124.8", "v124.8" ] ],
+    [ "pot:VCC", "esp:3V3", "red", [ "v134.4", "h210.4", "v-57.6" ] ],
+    [ "pot:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "pot:SIG", "esp:D34", "green", [ "v28.8", "h76.4", "v-57.6" ] ]
+  ],
+  "dependencies": {}
+}
