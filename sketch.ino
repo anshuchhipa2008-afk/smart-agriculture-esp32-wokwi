@@ -21,7 +21,7 @@ void loop() {
   float temp = dht.readTemperature();
   float hum = dht.readHumidity();
   int soilRaw = analogRead(SOIL_PIN);
-  int soilPercent = map(soilRaw, 0, 4095, 0, 100);
+  int soilPercent = map(soilRaw, 4095, 0, 0, 100);
   if (soilPercent < 40) digitalWrite(RELAY_PIN, HIGH);
   else digitalWrite(RELAY_PIN, LOW);
   Serial.print("Soil: "); Serial.print(soilPercent);
