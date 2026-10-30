@@ -1,7 +1,4 @@
-
-# 🌱 Smart Agriculture Monitoring System
-
-IoT Based Real-Time Soil Moisture, Temperature & Humidity Monitoring using ESP32 & Wokwi Simulator.
+# Smart Agriculture Monitoring - ESP32 Wokwi
 
 ### 🚀 Live Simulation
 **Wokwi Link:** https://wokwi.com/projects/479114791569296385
@@ -22,5 +19,18 @@ IoT Based Real-Time Soil Moisture, Temperature & Humidity Monitoring using ESP32
 - POT Signal -> ESP32 D34
 - VCC -> 3.3V, GND -> GND
 
-### 📊 Working
-System reads temperature, humidity from DHT22 and soil moisture from potentiometer, then displays real-time data on 16x2 LCD.
+### ⚙️ Working
+System reads temperature, humidity from DHT22 and soil moisture from potentiometer, then displays on LCD and controls water pump based on soil moisture threshold.
+
+### ✅ Level 3 - Wokwi Test Proof (Verified)
+
+#### 1. DRY Condition (Soil 0%) - Pump ON
+![DRY Pump ON](./level3-dry-pump-on.jpeg)
+
+#### 2. WET Condition (Soil 80%) - Pump OFF
+![WET Pump OFF](./level3-wet-pump-off.jpeg)
+
+#### 3. DHT22 Sensor Working
+![Temp Humidity](./level3-temp-humidity.jpeg)
+
+**Result:** Soil Moisture Threshold Logic Verified - DRY=ON, WET=OFF
