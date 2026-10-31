@@ -1,9 +1,14 @@
-# Smart Agriculture Monitoring - ESP32 Wokwi
+# Smart Agriculture Monitoring - ESP32 Wokwi 🌱
+> Aspiring MEXT Scholar Research Project | B.E. 1st Year @ Jiwaji University | Target Japan 2030
+
+This project is part of my early research profile building for MEXT & Honjo Scholarship, focusing on IoT + AgriTech for precision farming.
 
 ### 🚀 Live Simulation
 **Wokwi Link:** https://wokwi.com/projects/479129217587863553
-
 **GitHub Link:** https://github.com/anshuchhipa2008-afk/smart-agriculture-esp32-wokwi
+
+### 🎯 Problem Statement
+In India, water wastage in traditional farming is high. This system automates irrigation based on real-time soil moisture to save water.
 
 ### 🛠️ Components Used
 - ESP32 DevKit V1
@@ -34,3 +39,13 @@ System reads temperature, humidity from DHT22 and soil moisture from potentiomet
 <img src="./level3-temp-humidity.jpeg" width="100%">
 
 **Result:** Soil Moisture Threshold Logic Verified - DRY=ON, WET=OFF
+
+### 🔮 Future Scope (For MEXT Research Proposal)
+- Cloud integration with Firebase / Blynk
+- AI-based crop prediction using sensor data
+- LoRaWAN for long-range farm connectivity
+- Solar-powered autonomous nodes
+
+### 👨‍🎓 Author
+**Anshu Chhipa** - B.E. 1st Year @ Jiwaji University, Gwalior
+Aspiring MEXT & Honjo Scholar Japan 2030 | IoT + AgriTech
